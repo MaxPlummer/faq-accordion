@@ -1,3 +1,4 @@
+// Credit to https://www.w3schools.com/howto/howto_js_accordion.asp
 // Get a collection of the accordion buttons
 let accordions = document.getElementsByClassName("accordion");
 
@@ -7,10 +8,11 @@ for (let i = 0; i < accordions.length; i++) {
   accordions[i].addEventListener("click", function () {
     // Get answer elements and switch display on click
     let answer = this.nextElementSibling;
-    if (answer.style.display === "block") {
-      answer.style.display = "none";
+    if (answer.style.maxHeight) {
+      answer.style.maxHeight = null;
     } else {
-      answer.style.display = "block";
+      // maxHeight is calculated by the scrollHeight of the answer
+      answer.style.maxHeight = answer.scrollHeight + "px";
     }
   });
 }
