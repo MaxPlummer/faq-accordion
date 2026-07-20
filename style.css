@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("./assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: hsl(275, 100%, 97%);
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  margin: 0;
+}
+article.faq {
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 10px;
+  padding: 1.67rem;
+  margin: 1.5rem;
+}
+button.accordion {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  padding: 0;
+}
+@media (min-width: 375px) {
+  body {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+  }
+}
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
