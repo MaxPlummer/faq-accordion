@@ -11,6 +11,18 @@ body {
   background-repeat: no-repeat;
   margin: 0;
 }
+article.faq {
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 10px;
+  padding: 1.67rem;
+  margin: 1.5rem;
+}
+button.accordion {
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  padding: 0;
+}
 @media (min-width: 375px) {
   body {
     background-image: url("./assets/images/background-pattern-desktop.svg");
