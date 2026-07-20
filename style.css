@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("./assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: hsl(275, 100%, 97%);
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  margin: 0;
+}
+@media (min-width: 375px) {
+  body {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+  }
+}
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
