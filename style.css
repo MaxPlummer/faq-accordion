@@ -11,7 +11,6 @@ body {
   font-family: "Work Sans", sans-serif;
   background-color: hsl(275, 100%, 97%);
   background-image: url("./assets/images/background-pattern-mobile.svg");
-  /* TODO: Adjust bg img */
   background-repeat: no-repeat;
   min-height: 100dvh;
   display: flex;
@@ -111,11 +110,13 @@ p.answer {
     margin: 1rem 0;
   }
   img.star {
+    /* Star icon resizes up to 40px */
     max-width: 40px;
     width: 10vw;
     height: auto;
   }
   h1.title {
+    /* Set a range for the font size of the title heading */
     font-size: clamp(2rem, 10vw, 3.33rem);
   }
 }
