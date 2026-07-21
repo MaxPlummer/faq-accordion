@@ -6,6 +6,7 @@ let accordions = document.getElementsByClassName("accordion");
 for (let i = 0; i < accordions.length; i++) {
   // Add event listeners
   accordions[i].addEventListener("click", function () {
+    this.classList.toggle("active");
     // Get answer elements and switch display on click
     let answer = this.nextElementSibling;
     if (answer.style.maxHeight) {
