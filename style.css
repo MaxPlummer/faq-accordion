@@ -63,10 +63,13 @@ button.accordion:hover {
 button.accordion::after {
   content: url("./assets/images/icon-plus.svg");
   flex-shrink: 0;
+  transition: transform 0.3s ease;
 }
 button.accordion.active::after {
   content: url("./assets/images/icon-minus.svg");
   flex-shrink: 0;
+  /* Rotate button icon upon expanding/collapsing */
+  transform: rotate(180deg);
 }
 p.answer {
   color: hsl(292, 16%, 49%);
