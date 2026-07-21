@@ -16,10 +16,27 @@ article.faq {
   color: hsl(292, 45%, 20%);
   background-color: hsl(0, 100%, 100%);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
   padding: 1.67rem;
   margin: 1.5rem;
+  gap: 1.5rem;
+}
+h1.title {
+  margin: 0;
+}
+h2.question {
+  font-weight: 600;
+  margin: 0;
+}
+hr {
+  border: none;
+  border-top: 1px solid hsl(292, 16%, 49%, 0.2);
+  margin: 0;
 }
 button.accordion {
+  font-family: inherit;
+  color: inherit;
   background-color: transparent;
   border: none;
   text-align: left;
@@ -39,6 +56,7 @@ p.answer {
   overflow: hidden;
   /* Animate the accordion expansion/retraction */
   transition: max-height 0.3s ease-out;
+  margin: 0;
 }
 @media (min-width: 375px) {
   body {
