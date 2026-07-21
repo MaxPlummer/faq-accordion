@@ -4,6 +4,9 @@
   font-weight: 100 900;
   font-display: swap;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Work Sans", sans-serif;
   background-color: hsl(275, 100%, 97%);
@@ -26,8 +29,10 @@ h1.title {
   margin: 0;
 }
 h2.question {
+  font-size: 1rem;
   font-weight: 600;
   margin: 0;
+  flex: 1;
 }
 hr {
   border: none;
@@ -39,13 +44,23 @@ button.accordion {
   color: inherit;
   background-color: transparent;
   border: none;
+  outline: none;
   text-align: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   padding: 0;
 }
 button.accordion:hover {
   /* Change text color upon hovering */
   color: hsl(292, 60%, 50%);
   cursor: pointer;
+}
+button.accordion::after {
+  content: url("./assets/images/icon-plus.svg");
+  flex-shrink: 0;
 }
 p.answer {
   color: hsl(292, 16%, 49%);
