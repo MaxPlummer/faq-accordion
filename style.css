@@ -21,7 +21,7 @@ body {
   margin: 0;
   gap: 2rem;
 }
-article.faq {
+main.faq {
   color: hsl(292, 45%, 20%);
   background-color: hsl(0, 100%, 100%);
   border-radius: 10px;
@@ -30,7 +30,6 @@ article.faq {
   width: 87%;
   padding: 1.67rem;
   margin: 0;
-  gap: 1.5rem;
 }
 .card-header {
   display: flex;
@@ -44,19 +43,18 @@ img.star {
 h1.title {
   margin: 0;
 }
-h2.question {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0;
-  flex: 1;
+article.faq-item {
+  border-bottom: 1px solid hsl(292, 16%, 49%, 0.2);
+  padding: 1.5rem 0;
 }
-hr {
-  border: none;
-  border-top: 1px solid hsl(292, 16%, 49%, 0.2);
-  margin: 0;
+article.faq-item:last-child {
+  border-bottom: none;
+  padding: 1.5rem 0 0;
 }
 button.accordion {
   font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
   color: inherit;
   background-color: transparent;
   border: none;
@@ -68,6 +66,7 @@ button.accordion {
   align-items: center;
   /* Evenly distribute items along the main axis */
   justify-content: space-between;
+  flex: 1;
   gap: 1rem;
   padding: 0;
 }
@@ -104,7 +103,7 @@ p.answer {
     background-repeat: repeat-x;
     padding: 11rem 0 2rem;
   }
-  article.faq {
+  main.faq {
     max-width: 550px;
     padding: 2.33rem;
   }
