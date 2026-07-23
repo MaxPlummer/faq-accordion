@@ -8,12 +8,15 @@ for (let i = 0; i < accordions.length; i++) {
   accordions[i].addEventListener("click", function () {
     // Toggle the active class to switch button icons
     this.classList.toggle("active");
-    // Get answer elements and switch display on click
+    // Get faq answer elements and check for open class
     let answer = this.nextElementSibling;
-    if (answer.style.maxHeight) {
+    let isOpen = answer.classList.contains("open");
+    // Fade in/out text and open/close the accordion
+    if (isOpen) {
+      answer.classList.remove("open");
       answer.style.maxHeight = null;
     } else {
-      // maxHeight is calculated by the scrollHeight of the answer
+      answer.classList.add("open");
       answer.style.maxHeight = answer.scrollHeight + "px";
     }
   });

@@ -94,13 +94,23 @@ button.accordion.active::after {
   max-height: 0;
   overflow: hidden;
   /* Animate the accordion expansion/retraction */
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
   margin: 0;
 }
 /* Container for answers to prevent extra space */
 .answer-content {
   display: block;
   padding-top: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+/* FAQ answers fade in and out */
+.answer.open {
+  opacity: 1;
+}
+.answer.open .answer-content {
+  opacity: 1;
 }
 @media (min-width: 375px) {
   body {
