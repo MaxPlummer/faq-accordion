@@ -70,7 +70,7 @@ button.accordion {
   gap: 1rem;
   padding: 0;
 }
-button.accordion:hover {
+button.accordion:hover, button.accordion.active {
   /* Change text color upon hovering */
   color: hsl(292, 60%, 50%);
   cursor: pointer;
