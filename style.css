@@ -70,6 +70,10 @@ button.accordion {
   gap: 1rem;
   padding: 0;
 }
+button.accordion:focus-visible {
+  outline: 1px solid hsl(292, 60%, 50%);
+  outline-offset: 0.5rem;
+}
 button.accordion:hover, button.accordion.active {
   /* Change text color upon hovering */
   color: hsl(292, 60%, 50%);
@@ -78,7 +82,7 @@ button.accordion:hover, button.accordion.active {
 button.accordion::after {
   content: url("./assets/images/icon-plus.svg");
   flex-shrink: 0;
-  transition: transform 0.3s ease;
+  transition: transform 400ms ease;
 }
 button.accordion.active::after {
   content: url("./assets/images/icon-minus.svg");

@@ -15,9 +15,11 @@ for (let i = 0; i < accordions.length; i++) {
     // Fade in/out text and open/close the accordion
     if (isOpen) {
       answer.classList.remove("open");
+      answer.setAttribute("aria-hidden", true);
       answer.style.maxHeight = null;
     } else {
       answer.classList.add("open");
+      answer.setAttribute("aria-hidden", false);
       answer.style.maxHeight = answer.scrollHeight + "px";
     }
     this.setAttribute(
